@@ -8,16 +8,14 @@ body{
     background-color: #ffffff;
 }
 .container{
-    width: 90%;
-    margin:auto;
+    width: 100%;
     overflow: hidden;
 }
-header{
-    padding:5px;
-}
+/*header*/
 header nav{
     float: right;
     overflow: hidden;
+    margin-top: 20px;
 }
 header li{
     display: flex;
@@ -33,6 +31,17 @@ header a:hover{
     font-weight: bold;
     font-size: 15px;
 }
+/*advanced search page*/
+header .header-logo{
+    background-color: rgb(228, 228, 228);
+    height: 60px;
+}
+header .header-logo img{
+    height: 100px;
+    margin-top: -20px;
+    margin-left:20px;
+}
+/*main*/
 .main-logo{
     text-align: center;
 }
@@ -45,7 +54,7 @@ header a:hover{
     text-align: center;
     margin-top: -90px;
 }
-
+/*search bar*/
 #searchbar input{
     width: 500px;
     height: 42px;
@@ -56,11 +65,12 @@ header a:hover{
     font-size: large;
     outline:0;/* to get rid input div box*/
     cursor: default;
-    border: solid 0.1px #ccc;
+    border: solid 0.2px black;
 }
 #searchbar input:hover{
     -webkit-box-shadow: 0.5px 0.5px 1.5px 1.5px rgb(232, 232, 232);
 }
+/*button*/
 #button input{
     padding: 5px 10px;
     margin: 5px;
@@ -70,4 +80,73 @@ header a:hover{
 }    
 #button input:hover{
     border: 0.1px solid #d0d0d0;
+}
+.showcase{
+    height: 50px;
+    border-bottom: 0.1px solid #ccc;
+}
+.showcase h2{
+    color: rgb(150, 1, 1);
+    margin:30px 50px;
+    font-size: 23px;
+}
+.intro{
+    padding: 50px 50px;
+    height: 60px;
+}
+.intro h4{
+    float: left;
+    font-size: 21px;
+}
+.boxes{
+    padding-top: 10px;
+    padding-left: 45px;
+    width: 100%;
+    height: 200px;
+    margin:auto;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    display: block;
+    margin: auto;
+}
+.text h5{
+    padding:8px;
+    font-size: 18px;
+}
+.frame{
+    display: flex;
+    flex-direction: column;
+    float: right;  
+    width: 710px;
+    margin-right: 100px;
+}
+.frame input{
+    margin: 5px;
+    width: 700px;
+    height: 38px;
+    font-size: 25px;
+    border: 0.1 rgba(206, 206, 206, 0.158);
+    border-radius: 5px;
+}
+.frame input:hover{
+    -webkit-box-shadow: 0.5px 0.5px 1.5px 1.5px rgb(232, 232, 232);
+    border-color: royalblue;
+}
+.advanced-button{
+    width: 100%;
+    color: white;
+    padding-top: 210px;
+}
+.advanced-button input{
+    background-color: royalblue;
+    padding: 7px 13px;
+    border-radius: 2px;
+    float: right;
+    margin-right: 105px;
+}
+.advanced-button input:hover{
+    background-color: rgb(59, 95, 201);
 }
