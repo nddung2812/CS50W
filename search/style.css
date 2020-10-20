@@ -120,16 +120,17 @@ header .header-logo img{
     display: flex;
     flex-direction: column;
     float: right;  
-    width: 710px;
+    width: 80%;
     margin-right: 100px;
+    resize: vertical;
 }
 .frame input{
     margin: 5px;
-    width: 700px;
+    width: auto ;
     height: 38px;
     font-size: 25px;
     border: 0.1 rgba(206, 206, 206, 0.158);
-    border-radius: 5px;
+    border-radius: 3px;
 }
 .frame input:hover{
     -webkit-box-shadow: 0.5px 0.5px 1.5px 1.5px rgb(232, 232, 232);
@@ -150,3 +151,9 @@ header .header-logo img{
 .advanced-button input:hover{
     background-color: rgb(59, 95, 201);
 }
+@media screen and (max-width: 600px) {
+    .frame input, .frame, .advanced-button input {
+      width: 100%;
+      margin-top:0;
+    }
+  }

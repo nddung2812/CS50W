@@ -3,7 +3,7 @@
     <head>
         <title>Google Advanced Search</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <header>
@@ -15,7 +15,7 @@
                 </ul>
             </nav>
             <div class="header-logo">
-                <img src="./Img/google-logo.png" alt="top">
+                <img src="./google-logo.png" alt="top">
             </div>
         </header>
             <div class="showcase">
@@ -25,7 +25,7 @@
                 <h4>Find pages with...</h4>
             </div>
             <div class="boxes">
-            <form action="https://google.com/search">
+            <form method ="get" action="https://google.com/search">
                 <div class="text">
                     <h5>all these words:</h5>
                     <h5>this exact word or phrase:</h5>
@@ -33,10 +33,10 @@
                     <h5>none of those words:</h5>
                 </div>
                 <div class="frame">    
-                    <input type="text" name="q">
-                    <input type="text" name="q">
-                    <input type="text" name="q">
-                    <input type="text" name="q">
+                    <input type="text" name="as_q">
+                    <input type="text" name="as_epq">
+                    <input type="text" name="as_oq">
+                    <input type="text" name="as_eq">
                 </div>
                 <div class="advanced-button">
                     <input type="submit" value="Advanced Search">    
